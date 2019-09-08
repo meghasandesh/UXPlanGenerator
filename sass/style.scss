@@ -60,6 +60,18 @@ body {
 		color: #fff;
 		min-height: 300px;
 
+		&::after {
+			content: ' ';
+			border-radius: 20px;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0,0.0));
+			z-index: 2;
+		}
+
 
 		&.req {
 			background-image: url('../img/requirements.jpg'); 
@@ -145,6 +157,9 @@ body {
 			font-family: 'Roboto';
 			text-transform: none !important;
 			font-weight: 200;
+			margin-bottom: 5px;
+			position: relative;
+			z-index: 3;
 		}
 
 		.add-btn {
@@ -164,6 +179,7 @@ body {
 		    cursor: pointer;
 		    background-color: #fff;
 		    border-radius: 40px;
+		    z-index: 3;
 
 		    .plus {
 		    	width: 100%;
@@ -184,6 +200,13 @@ body {
 		    }
 		}
 
+		.type {
+			font-weight: 600;
+    		font-size: 12px;
+    		position: relative;
+    		z-index: 3;
+		}
+
 		button.liquid {
 			font-family: 'Roboto';
 			letter-spacing: 0.05em;
@@ -202,6 +225,7 @@ body {
 			left: 50%;
 			transform: translateX(-50%);
 			bottom: 24px;
+			z-index: 3;
 		}
 	}
 
@@ -209,4 +233,16 @@ body {
 
 .ux-plan {
 	display: none;
+}
+
+footer {
+	font-size: 10px;
+	color: #54617A;
+	margin: 20px 0;
+
+	a, a:hover, a:focus, a:visited {
+		color: #54617A;
+		text-decoration: none;
+		outline: none;
+	}
 }

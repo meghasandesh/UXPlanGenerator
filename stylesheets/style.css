@@ -63,91 +63,106 @@ body .search-bar {
   color: #fff;
   min-height: 300px;
 }
-/* line 64, ../sass/style.scss */
+/* line 63, ../sass/style.scss */
+.ux-activity.liquid::after {
+  content: ' ';
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
+  z-index: 2;
+}
+/* line 76, ../sass/style.scss */
 .ux-activity.liquid.req {
   background-image: url("../img/requirements.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 72, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 .ux-activity.liquid.interview {
   background-image: url("../img/interviews.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 79, ../sass/style.scss */
+/* line 91, ../sass/style.scss */
 .ux-activity.liquid.focus {
   background-image: url("../img/focus-grp.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 86, ../sass/style.scss */
+/* line 98, ../sass/style.scss */
 .ux-activity.liquid.survey {
   background-image: url("../img/survey.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 94, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 .ux-activity.liquid.audit {
   background-image: url("../img/audit.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 101, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 .ux-activity.liquid.low-fi {
   background-image: url("../img/low-fi.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 108, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 .ux-activity.liquid.hi-fi {
   background-image: url("../img/prototype.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 115, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 .ux-activity.liquid.abtest {
   background-image: url("../img/ab-test.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 122, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
 .ux-activity.liquid.analytics {
   background-image: url("../img/analytics.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 129, ../sass/style.scss */
+/* line 141, ../sass/style.scss */
 .ux-activity.liquid.heuristic {
   background-image: url("../img/heuristic.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 136, ../sass/style.scss */
+/* line 148, ../sass/style.scss */
 .ux-activity.liquid.anthropology {
   background-image: url("../img/anthropology.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 143, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
 .ux-activity.liquid h3 {
   letter-spacing: 0.02em;
   font-family: 'Roboto';
   text-transform: none !important;
   font-weight: 200;
+  margin-bottom: 5px;
+  position: relative;
+  z-index: 3;
 }
-/* line 150, ../sass/style.scss */
+/* line 165, ../sass/style.scss */
 .ux-activity.liquid .add-btn {
   outline: none;
   border: none;
@@ -165,17 +180,18 @@ body .search-bar {
   cursor: pointer;
   background-color: #fff;
   border-radius: 40px;
+  z-index: 3;
 }
-/* line 168, ../sass/style.scss */
+/* line 184, ../sass/style.scss */
 .ux-activity.liquid .add-btn .plus {
   width: 100%;
 }
-/* line 172, ../sass/style.scss */
+/* line 188, ../sass/style.scss */
 .ux-activity.liquid .add-btn .check {
   width: 100%;
   display: none;
 }
-/* line 177, ../sass/style.scss */
+/* line 193, ../sass/style.scss */
 .ux-activity.liquid .add-btn div {
   width: 32px;
   height: 32px;
@@ -184,7 +200,14 @@ body .search-bar {
   text-align: center;
   line-height: 31px;
 }
-/* line 187, ../sass/style.scss */
+/* line 203, ../sass/style.scss */
+.ux-activity.liquid .type {
+  font-weight: 600;
+  font-size: 12px;
+  position: relative;
+  z-index: 3;
+}
+/* line 210, ../sass/style.scss */
 .ux-activity.liquid button.liquid {
   font-family: 'Roboto';
   letter-spacing: 0.05em;
@@ -203,9 +226,23 @@ body .search-bar {
   left: 50%;
   transform: translateX(-50%);
   bottom: 24px;
+  z-index: 3;
 }
 
-/* line 210, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
 .ux-plan {
   display: none;
+}
+
+/* line 238, ../sass/style.scss */
+footer {
+  font-size: 10px;
+  color: #54617A;
+  margin: 20px 0;
+}
+/* line 243, ../sass/style.scss */
+footer a, footer a:hover, footer a:focus, footer a:visited {
+  color: #54617A;
+  text-decoration: none;
+  outline: none;
 }
