@@ -58,6 +58,20 @@ $(document).ready(function() {
 		store.set('uxplan', uxplan);
 	});
 
+	$(".js-search").on("keyup", function() {
+	    var value = $(this).val().toLowerCase();
+	    $(".js-ux-list .ux-activity").filter(function() {
+	      $(this).toggle($(this).find('h3').html().toLowerCase().indexOf(value) > -1);
+	    });
+	  });
+
+	$('.js-category').change(function() {
+		var value = $(this).val().toLowerCase();
+		$(".js-ux-list .ux-activity").filter(function() {
+	      $(this).toggle($(this).find('.type').html().toLowerCase().indexOf(value) > -1);
+	    });
+	});
+
 	$('.js-view-plan').click(function() {
 		$('.js-ux-list').hide();
 		$('.js-ux-plan').show();
