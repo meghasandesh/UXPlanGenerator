@@ -29,6 +29,7 @@ body {
 	box-shadow: 0px 0px 6px rgba(0,0,0,0.1);
 	margin: 10px;
 
+
 	img {
 		max-width: 64px;
 	}
@@ -59,6 +60,12 @@ body {
 		box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
 		color: #fff;
 		min-height: 300px;
+		transition: all 0.15s ease-in;
+
+		&:hover {
+			box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+			transform: scale(1.02);
+		}
 
 		&::after {
 			content: ' ';
@@ -147,6 +154,27 @@ body {
 
 		&.anthropology {
 			background-image: url('../img/anthropology.jpg'); 
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+		}
+
+		&.design-system {
+			background-image: url('../img/design-system.jpg'); 
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+		}
+
+		&.interaction {
+			background-image: url('../img/interaction.jpg'); 
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+		}
+
+		&.graphic {
+			background-image: url('../img/graphic.jpg'); 
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center center;
@@ -244,5 +272,6 @@ footer {
 		color: #54617A;
 		text-decoration: none;
 		outline: none;
+		font-weight: 600;
 	}
 }

@@ -1,22 +1,3 @@
-// Store current user
-store.set('user', { name:'Marcus' });
-
-// Get current user
-store.get('user');
-
-
-
-// Loop over all stored values
-store.each(function(value, key) {
-	console.log(key, '==', value);
-});
-
-// Remove current user
-store.remove('user');
-
-// Clear all keys
-store.clearAll();
-
 function removeDups(names) {
   let unique = {};
   names.forEach(function(i) {
@@ -29,9 +10,22 @@ function removeDups(names) {
 
 $(document).ready(function() {
 	var uxplan = store.get('uxplan');
+	var title = store.get('title');
+
+	if(title) {
+		$('.js-title').val(title);
+	}
 
 	if(!uxplan) {
 		uxplan = [];
+	}
+	else {
+		$('.js-ux-list .ux-activity').each(function(){
+			if(uxplan.indexOf($(this).find('h3').html()) != -1) {
+				$(this).find('.plus').toggle();
+				$(this).find('.check').toggle();
+			}
+		});
 	}
 
 	$('.js-add-btn').click(function() {
@@ -54,7 +48,7 @@ $(document).ready(function() {
 			$(this).find('.check').toggle();
 		}
 		//todo: deduplicate entries
-		removeDups(uxplan);
+		uxplan = removeDups(uxplan);
 		store.set('uxplan', uxplan);
 	});
 
@@ -70,6 +64,11 @@ $(document).ready(function() {
 		$(".js-ux-list .ux-activity").filter(function() {
 	      $(this).toggle($(this).find('.type').html().toLowerCase().indexOf(value) > -1);
 	    });
+	});
+
+	$('.js-title').focusout(function() {
+		var value = $(this).val();
+		store.set('title', value);
 	});
 
 	$('.js-view-plan').click(function() {
