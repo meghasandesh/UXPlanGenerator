@@ -81,7 +81,7 @@ body {
 
 
 		&.req {
-			background-image: url('../img/requirements.jpg'); 
+			background-image: url('../img/requirement.jpg'); 
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center center;
@@ -97,6 +97,13 @@ body {
 
 		&.focus {
 			background-image: url('../img/focus-grp.jpg'); 
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+		}
+
+		&.record {
+			background-image: url('../img/record.jpg'); 
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center center;
@@ -175,6 +182,27 @@ body {
 
 		&.graphic {
 			background-image: url('../img/graphic.jpg'); 
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+		}
+
+		&.info-arch {
+			background-image: url('../img/info-arch.jpg'); 
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+		}
+
+		&.eye-track {
+			background-image: url('../img/eye-track.jpg'); 
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+		}
+
+		&.card-sort {
+			background-image: url('../img/card-sort.jpg'); 
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center center;

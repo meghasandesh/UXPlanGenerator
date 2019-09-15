@@ -22,8 +22,8 @@ $(document).ready(function() {
 	else {
 		$('.js-ux-list .ux-activity').each(function(){
 			if(uxplan.indexOf($(this).find('h3').html()) != -1) {
-				$(this).find('.plus').toggle();
-				$(this).find('.check').toggle();
+				$(this).find('.plus').hide();
+				$(this).find('.check').show();
 			}
 		});
 	}
