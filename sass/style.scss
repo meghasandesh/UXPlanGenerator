@@ -117,6 +117,30 @@ body {
 
 		}
 
+		&.paper {
+			background-image: url('../img/paper.jpg'); 
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+
+		}
+
+		&.sketch {
+			background-image: url('../img/sketch.jpg'); 
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+
+		}
+
+		&.storyboard {
+			background-image: url('../img/storyboard.png'); 
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+
+		}
+
 		&.audit {
 			background-image: url('../img/audit.jpg'); 
 			background-repeat: no-repeat;
@@ -132,7 +156,7 @@ body {
 		}
 
 		&.hi-fi {
-			background-image: url('../img/prototype.jpg'); 
+			background-image: url('../img/mock.png'); 
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center center;
@@ -175,6 +199,13 @@ body {
 
 		&.interaction {
 			background-image: url('../img/interaction.jpg'); 
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+		}
+
+		&.interactive {
+			background-image: url('../img/prototype.jpg'); 
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center center;
