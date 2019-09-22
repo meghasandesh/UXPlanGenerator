@@ -29,7 +29,7 @@ $(document).ready(function() {
 	}
 
 	$('.js-add-btn').click(function() {
-		var activity = $(this).closest('.ux-activity').clone();
+		//var activity = $(this).closest('.ux-activity').clone();
 		var title = $(this).closest('.ux-activity').find('h3').html();
 		
 		var dups = false;
@@ -42,7 +42,8 @@ $(document).ready(function() {
 		}
 
 		if(!dups) {
-			activity.appendTo('.js-ux-plan');
+			//activity.appendTo('.js-ux-plan');
+			activity = $(this).closest('.ux-activity').toggleClass('checked');
 			uxplan.push(title);
 			$(this).find('.plus').toggle();
 			$(this).find('.check').toggle();
@@ -72,8 +73,11 @@ $(document).ready(function() {
 	});
 
 	$('.js-view-plan').click(function() {
-		$('.js-ux-list').hide();
-		$('.js-ux-plan').show();
+		$('.ux-activity').each(function() {
+			if($(this).hasClass('checked')) {
+				
+			}
+		});
 	});
 
 	$('.js-view-all').click(function() {
