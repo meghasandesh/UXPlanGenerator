@@ -17,13 +17,14 @@ $(document).ready(function() {
 	}
 
 	if(!uxplan) {
-		uxplan = [];
+		uxplan = {};
 	}
 	else {
 		$('.js-ux-list .ux-activity').each(function(){
-			if(uxplan.indexOf($(this).find('h3').html()) != -1) {
+			if(uxplan[$(this).find('h3').html()]) {
 				$(this).find('.plus').hide();
 				$(this).find('.check').show();
+				$(this).addClass('checked');
 			}
 		});
 	}
@@ -43,10 +44,17 @@ $(document).ready(function() {
 
 		if(!dups) {
 			//activity.appendTo('.js-ux-plan');
-			activity = $(this).closest('.ux-activity').toggleClass('checked');
-			uxplan.push(title);
-			$(this).find('.plus').toggle();
-			$(this).find('.check').toggle();
+			if($(this).closest('.ux-activity').hasClass('checked')) {
+				uxplan.delete($(this).find('h3').html());
+				$(this).find('.plus').show();
+				$(this).find('.check').hide();
+			}
+			else {
+				//activity = $(this).closest('.ux-activity').toggleClass('checked');
+				uxplan.push(title);
+				$(this).find('.plus').hide();
+				$(this).find('.check').show();
+			}
 		}
 		//todo: deduplicate entries
 		uxplan = removeDups(uxplan);
@@ -75,7 +83,10 @@ $(document).ready(function() {
 	$('.js-view-plan').click(function() {
 		$('.ux-activity').each(function() {
 			if($(this).hasClass('checked')) {
-				
+				$(this).show();
+			}
+			else {
+				$(this).hide();
 			}
 		});
 	});
@@ -86,9 +97,12 @@ $(document).ready(function() {
 	});
 
 	$('.js-reset-plan').click(function() {
-		uxplan = [];
+		uxplan = {};
 		store.remove('uxplan');
 		$('.js-ux-plan').html('');
+		$('.ux-activity').each(function(){
+			$(this).removeClass('checked');
+		});
 	});
 
 	$('.js-print-page').click(function() {
