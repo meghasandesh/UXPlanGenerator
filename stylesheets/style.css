@@ -41,17 +41,25 @@ body .search-bar {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
   transform: scale(1.02);
 }
-/* line 44, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
+.ux-activity.checked .add-btn .plus {
+  display: none;
+}
+/* line 49, ../sass/style.scss */
+.ux-activity.checked .add-btn .check {
+  display: block;
+}
+/* line 56, ../sass/style.scss */
 .ux-activity img {
   max-width: 120px;
 }
-/* line 48, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 .ux-activity h3 {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-family: 'Montserrat';
 }
-/* line 54, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 .ux-activity button {
   font-family: 'Montserrat';
   text-transform: uppercase;
@@ -62,11 +70,11 @@ body .search-bar {
   background-color: transparent;
   cursor: pointer;
 }
-/* line 65, ../sass/style.scss */
+/* line 77, ../sass/style.scss */
 .ux-activity .detail {
   display: none;
 }
-/* line 69, ../sass/style.scss */
+/* line 81, ../sass/style.scss */
 .ux-activity h3 {
   letter-spacing: 0.02em;
   font-family: 'Roboto';
@@ -76,7 +84,7 @@ body .search-bar {
   position: relative;
   z-index: 3;
 }
-/* line 79, ../sass/style.scss */
+/* line 91, ../sass/style.scss */
 .ux-activity .add-btn {
   outline: none;
   border: none;
@@ -96,16 +104,16 @@ body .search-bar {
   border-radius: 40px;
   z-index: 3;
 }
-/* line 98, ../sass/style.scss */
+/* line 110, ../sass/style.scss */
 .ux-activity .add-btn .plus {
   width: 100%;
 }
-/* line 102, ../sass/style.scss */
+/* line 114, ../sass/style.scss */
 .ux-activity .add-btn .check {
   width: 100%;
   display: none;
 }
-/* line 107, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 .ux-activity .add-btn div {
   width: 32px;
   height: 32px;
@@ -114,20 +122,20 @@ body .search-bar {
   text-align: center;
   line-height: 31px;
 }
-/* line 117, ../sass/style.scss */
+/* line 129, ../sass/style.scss */
 .ux-activity .text {
   position: absolute;
   margin-left: 130px;
   margin-right: 16px;
 }
-/* line 123, ../sass/style.scss */
+/* line 135, ../sass/style.scss */
 .ux-activity .type {
   font-weight: 600;
   font-size: 12px;
   position: relative;
   z-index: 3;
 }
-/* line 130, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 .ux-activity.liquid {
   border-radius: 20px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
@@ -136,12 +144,12 @@ body .search-bar {
   transition: all 0.15s ease-in;
   padding-left: 4px;
 }
-/* line 138, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 .ux-activity.liquid:hover {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
   transform: scale(1.02);
 }
-/* line 143, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
 .ux-activity.liquid::after {
   content: ' ';
   border-radius: 20px;
@@ -153,161 +161,161 @@ body .search-bar {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
   z-index: 2;
 }
-/* line 156, ../sass/style.scss */
+/* line 168, ../sass/style.scss */
 .ux-activity.liquid.req {
   background-image: url("../img/requirement.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 164, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 .ux-activity.liquid.interview {
   background-image: url("../img/interviews.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 171, ../sass/style.scss */
+/* line 183, ../sass/style.scss */
 .ux-activity.liquid.focus {
   background-image: url("../img/focus-grp.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 178, ../sass/style.scss */
+/* line 190, ../sass/style.scss */
 .ux-activity.liquid.record {
   background-image: url("../img/record.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 185, ../sass/style.scss */
+/* line 197, ../sass/style.scss */
 .ux-activity.liquid.survey {
   background-image: url("../img/survey.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 193, ../sass/style.scss */
+/* line 205, ../sass/style.scss */
 .ux-activity.liquid.paper {
   background-image: url("../img/paper.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 201, ../sass/style.scss */
+/* line 213, ../sass/style.scss */
 .ux-activity.liquid.sketch {
   background-image: url("../img/sketch.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 209, ../sass/style.scss */
+/* line 221, ../sass/style.scss */
 .ux-activity.liquid.storyboard {
   background-image: url("../img/storyboard.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 217, ../sass/style.scss */
+/* line 229, ../sass/style.scss */
 .ux-activity.liquid.audit {
   background-image: url("../img/audit.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 224, ../sass/style.scss */
+/* line 236, ../sass/style.scss */
 .ux-activity.liquid.low-fi {
   background-image: url("../img/low-fi.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 231, ../sass/style.scss */
+/* line 243, ../sass/style.scss */
 .ux-activity.liquid.hi-fi {
   background-image: url("../img/mock.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 238, ../sass/style.scss */
+/* line 250, ../sass/style.scss */
 .ux-activity.liquid.abtest {
   background-image: url("../img/ab-test.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 245, ../sass/style.scss */
+/* line 257, ../sass/style.scss */
 .ux-activity.liquid.analytics {
   background-image: url("../img/analytics.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 252, ../sass/style.scss */
+/* line 264, ../sass/style.scss */
 .ux-activity.liquid.heuristic {
   background-image: url("../img/heuristic.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 259, ../sass/style.scss */
+/* line 271, ../sass/style.scss */
 .ux-activity.liquid.anthropology {
   background-image: url("../img/anthropology.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 266, ../sass/style.scss */
+/* line 278, ../sass/style.scss */
 .ux-activity.liquid.design-system {
   background-image: url("../img/design-system.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 273, ../sass/style.scss */
+/* line 285, ../sass/style.scss */
 .ux-activity.liquid.interaction {
   background-image: url("../img/interaction.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 280, ../sass/style.scss */
+/* line 292, ../sass/style.scss */
 .ux-activity.liquid.interactive {
   background-image: url("../img/prototype.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 287, ../sass/style.scss */
+/* line 299, ../sass/style.scss */
 .ux-activity.liquid.graphic {
   background-image: url("../img/graphic.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 294, ../sass/style.scss */
+/* line 306, ../sass/style.scss */
 .ux-activity.liquid.info-arch {
   background-image: url("../img/info-arch.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 301, ../sass/style.scss */
+/* line 313, ../sass/style.scss */
 .ux-activity.liquid.eye-track {
   background-image: url("../img/eye-track.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 308, ../sass/style.scss */
+/* line 320, ../sass/style.scss */
 .ux-activity.liquid.card-sort {
   background-image: url("../img/card-sort.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 315, ../sass/style.scss */
+/* line 327, ../sass/style.scss */
 .ux-activity.liquid h3 {
   letter-spacing: 0.02em;
   font-family: 'Roboto';
@@ -317,7 +325,7 @@ body .search-bar {
   position: relative;
   z-index: 3;
 }
-/* line 325, ../sass/style.scss */
+/* line 337, ../sass/style.scss */
 .ux-activity.liquid .add-btn {
   outline: none;
   border: none;
@@ -337,16 +345,16 @@ body .search-bar {
   border-radius: 40px;
   z-index: 3;
 }
-/* line 344, ../sass/style.scss */
+/* line 356, ../sass/style.scss */
 .ux-activity.liquid .add-btn .plus {
   width: 100%;
 }
-/* line 348, ../sass/style.scss */
+/* line 360, ../sass/style.scss */
 .ux-activity.liquid .add-btn .check {
   width: 100%;
   display: none;
 }
-/* line 353, ../sass/style.scss */
+/* line 365, ../sass/style.scss */
 .ux-activity.liquid .add-btn div {
   width: 32px;
   height: 32px;
@@ -355,14 +363,14 @@ body .search-bar {
   text-align: center;
   line-height: 31px;
 }
-/* line 363, ../sass/style.scss */
+/* line 375, ../sass/style.scss */
 .ux-activity.liquid .type {
   font-weight: 600;
   font-size: 12px;
   position: relative;
   z-index: 3;
 }
-/* line 370, ../sass/style.scss */
+/* line 382, ../sass/style.scss */
 .ux-activity.liquid button.liquid {
   font-family: 'Roboto';
   letter-spacing: 0.05em;
@@ -384,18 +392,18 @@ body .search-bar {
   z-index: 3;
 }
 
-/* line 394, ../sass/style.scss */
+/* line 406, ../sass/style.scss */
 .ux-plan {
   display: none;
 }
 
-/* line 398, ../sass/style.scss */
+/* line 410, ../sass/style.scss */
 footer {
   font-size: 10px;
   color: #54617A;
   margin: 20px 0;
 }
-/* line 403, ../sass/style.scss */
+/* line 415, ../sass/style.scss */
 footer a, footer a:hover, footer a:focus, footer a:visited {
   color: #54617A;
   text-decoration: none;

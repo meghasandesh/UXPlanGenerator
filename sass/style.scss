@@ -40,6 +40,18 @@ body {
 		transform: scale(1.02);
 	}
 
+	&.checked {
+		.add-btn {
+			.plus {
+				display: none;
+			}
+
+			.check {
+				display: block;
+			}
+		}
+	}
+
 
 	img {
 		max-width: 120px;

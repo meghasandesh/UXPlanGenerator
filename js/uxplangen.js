@@ -22,8 +22,6 @@ $(document).ready(function() {
 	else {
 		$('.js-ux-list .ux-activity').each(function(){
 			if(uxplan[$(this).find('h3').html()]) {
-				$(this).find('.plus').hide();
-				$(this).find('.check').show();
 				$(this).addClass('checked');
 			}
 		});
@@ -44,20 +42,19 @@ $(document).ready(function() {
 
 		if(!dups) {
 			//activity.appendTo('.js-ux-plan');
+			activity = $(this).closest('.ux-activity');
+				
 			if($(this).closest('.ux-activity').hasClass('checked')) {
-				uxplan.delete($(this).find('h3').html());
-				$(this).find('.plus').show();
-				$(this).find('.check').hide();
+				delete uxplan[activity.find('h3').html()];
+				activity.removeClass('checked');
 			}
 			else {
-				//activity = $(this).closest('.ux-activity').toggleClass('checked');
-				uxplan.push(title);
-				$(this).find('.plus').hide();
-				$(this).find('.check').show();
+				uxplan[activity.find('h3').html()] = activity.find('h3').html();
+				activity.addClass('checked');
 			}
 		}
 		//todo: deduplicate entries
-		uxplan = removeDups(uxplan);
+		//uxplan = removeDups(uxplan);
 		store.set('uxplan', uxplan);
 	});
 
@@ -92,8 +89,9 @@ $(document).ready(function() {
 	});
 
 	$('.js-view-all').click(function() {
-		$('.js-ux-list').show();
-		$('.js-ux-plan').hide();
+		$('.ux-activity').each(function() {
+			$(this).show();
+		});
 	});
 
 	$('.js-reset-plan').click(function() {
