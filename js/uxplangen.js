@@ -60,7 +60,7 @@ $(document).ready(function() {
 
 	$(".js-search").on("keyup", function() {
 	    var value = $(this).val().toLowerCase();
-	    $(".js-ux-list .ux-activity").filter(function() {
+	    $(".js-ux-list .js-activity-wrapper").filter(function() {
 	      $(this).toggle($(this).find('h3').html().toLowerCase().indexOf(value) > -1);
 	    });
 	  });
