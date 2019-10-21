@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
 	<link rel="stylesheet" type="text/css" href="css/cards.css">
 	<link rel="stylesheet" type="text/css" href="js/select2/select2.css">
+	<link rel="stylesheet" type="text/css" href="multi-select/dist/css/multiple-select.css">
 	<title>REAP - A UX Framework Planner</title>
 	<!-- Hotjar Tracking Code for thatuxdesigner.com -->
 	<script>
@@ -27,12 +28,11 @@
 		<div class="row">
 			<header>
 				<input type="text" class="search-bar js-search" name="" placeholder="Search">
-				<select class="js-category">
-					<option selected disabled="">Select Category</option>
-					<option value="research">Research</option>
-					<option value="prototyping">Prototyping</option>
-					<option value="testing">Testing</option>
-				</select>
+				<select id="category" multiple=multiple class="multiselect" data-placeholder="Select Category"> 
+					<option value=mig>Research</option> 
+					<option value=radio>Prototyping</option> 
+					<option value=cardio>Testing</option> 
+				</select> 
 				<!--button>Switch to Printable View</button-->
 				<button class="js-reset-plan">Reset Plan</button>
 				<button class="js-view-all">View All</button>
@@ -457,6 +457,8 @@
 	<script type="text/javascript" src="js/store.modern.min.js"></script>
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/select2/select2.js"></script>
+	<script type="text/javascript" src="multi-select/dist/js/app.js"></script>
+	<script type="text/javascript" src="multi-select/dist/js/multiple-select.js"></script>
 	<script type="text/javascript" src="js/uxplangen.js"></script>
 </body>
 </html>
