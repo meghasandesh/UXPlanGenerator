@@ -79,8 +79,8 @@ $(document).ready(function() {
 	});
 
 	$('.js-view-plan').click(function() {
-		$('.ux-activity').each(function() {
-			if($(this).hasClass('checked')) {
+		$('.js-ux-list .js-activity-wrapper').each(function() {
+			if($(this).find('.ux-activity').hasClass('checked')) {
 				$(this).show();
 			}
 			else {
@@ -90,7 +90,7 @@ $(document).ready(function() {
 	});
 
 	$('.js-view-all').click(function() {
-		$('.ux-activity').each(function() {
+		$('.js-ux-list .js-activity-wrapper').each(function() {
 			$(this).show();
 		});
 	});
@@ -99,8 +99,8 @@ $(document).ready(function() {
 		uxplan = {};
 		store.remove('uxplan');
 		$('.js-ux-plan').html('');
-		$('.ux-activity').each(function(){
-			$(this).removeClass('checked');
+		$('.js-ux-list .js-activity-wrapper').each(function(){
+			$(this).find('.ux-activity').removeClass('checked');
 		});
 	});
 
