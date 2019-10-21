@@ -626,7 +626,7 @@ class MultipleSelect {
     let selectedItems = []
 
     root.setAttribute('id', `multiple-select-container-${selectMultipleContainerId}`)
-    root.setAttribute('class', 'multiple-select-container')
+    root.setAttribute('class', 'multiple-select-container js-category')
     root.style.position = 'relative'
     root.style.display = 'inline-block'
     
