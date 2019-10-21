@@ -11,8 +11,9 @@ body .title {
   background: transparent;
   border: none;
   outline: none !important;
+  margin-bottom: 20px;
 }
-/* line 14, ../sass/style.scss */
+/* line 15, ../sass/style.scss */
 body .search-bar {
   background: #e7ebed;
   border: none;
@@ -24,20 +25,24 @@ body .search-bar {
   color: #54617A;
   font-size: 14px;
 }
-/* line 26, ../sass/style.scss */
+/* line 27, ../sass/style.scss */
 body header {
   margin-bottom: 32px;
 }
-/* line 30, ../sass/style.scss */
+/* line 31, ../sass/style.scss */
+body .ux-list {
+  padding: 0;
+}
+/* line 35, ../sass/style.scss */
 body .multiple-select-container {
   min-width: 300px;
   outline: none;
 }
-/* line 34, ../sass/style.scss */
+/* line 39, ../sass/style.scss */
 body .multiple-select-container:hover, body .multiple-select-container:focus, body .multiple-select-container:active {
   outline: none;
 }
-/* line 40, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 body .dropdown-select {
   position: absolute;
   z-index: 3;
@@ -52,18 +57,18 @@ body .dropdown-select {
   border-radius: 0 0 10px 10px;
   margin: 0 10px;
 }
-/* line 54, ../sass/style.scss */
+/* line 59, ../sass/style.scss */
 body .dropdown-select:focus {
   outline: none;
 }
-/* line 56, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
 body .dropdown-select ul {
   overflow-y: scroll;
   padding: 0 10px 10px;
   margin-top: 10px;
   margin-bottom: 2px;
 }
-/* line 62, ../sass/style.scss */
+/* line 67, ../sass/style.scss */
 body .dropdown-select ul li {
   cursor: pointer;
   border: none;
@@ -72,21 +77,21 @@ body .dropdown-select ul li {
   padding: 2px 10px;
   font-weight: 300;
 }
-/* line 70, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 body .dropdown-select ul li:not(.list-group-item-secondary):not(.list-group-item-primary):hover, body .dropdown-select ul li:not(.list-group-item-secondary):not(.list-group-item-primary).hover {
   background-color: rgba(220, 220, 220, 0.3);
 }
-/* line 76, ../sass/style.scss */
+/* line 81, ../sass/style.scss */
 body .dropdown-select ul li.list-group-item-primary {
   color: #fff !important;
   background-color: #0c8eff !important;
 }
-/* line 82, ../sass/style.scss */
+/* line 87, ../sass/style.scss */
 body .opened .dropdown-select {
   display: block;
   z-index: 500;
 }
-/* line 87, ../sass/style.scss */
+/* line 92, ../sass/style.scss */
 body button.form-control {
   padding: 0px 10px;
   background-color: #e7ebed;
@@ -98,19 +103,19 @@ body button.form-control {
   font-weight: 300;
   border: none;
 }
-/* line 98, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
 body button.form-control .caret {
   transform: scaleX(1.6);
 }
-/* line 103, ../sass/style.scss */
+/* line 108, ../sass/style.scss */
 body .dropdown-select ul li:not(.list-group-item-secondary).list-group-item-primary:hover, body .dropdown-select ul li:not(.list-group-item-secondary).list-group-item-primary.hover {
   font-weight: 300;
 }
-/* line 107, ../sass/style.scss */
+/* line 112, ../sass/style.scss */
 body .p-2 {
   padding: 0;
 }
-/* line 110, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 body .p-2 input.form-control {
   width: 96%;
   border: none !important;
@@ -121,12 +126,12 @@ body .p-2 input.form-control {
   padding: 5px 10px;
   font-size: 14px;
 }
-/* line 119, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
 body .p-2 input.form-control:hover, body .p-2 input.form-control:focus, body .p-2 input.form-control:active {
   outline: none;
 }
 
-/* line 126, ../sass/style.scss */
+/* line 131, ../sass/style.scss */
 .ux-activity {
   background-color: #fff;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
@@ -136,29 +141,29 @@ body .p-2 input.form-control:hover, body .p-2 input.form-control:focus, body .p-
   transition: all 0.15s ease-in;
   margin-bottom: 20px;
 }
-/* line 138, ../sass/style.scss */
+/* line 143, ../sass/style.scss */
 .ux-activity:hover {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 }
-/* line 145, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 .ux-activity.checked .add-btn .plus {
   display: none;
 }
-/* line 149, ../sass/style.scss */
+/* line 154, ../sass/style.scss */
 .ux-activity.checked .add-btn .check {
   display: block;
 }
-/* line 156, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 .ux-activity img {
   max-width: 120px;
 }
-/* line 160, ../sass/style.scss */
+/* line 165, ../sass/style.scss */
 .ux-activity h3 {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-family: 'Montserrat';
 }
-/* line 166, ../sass/style.scss */
+/* line 171, ../sass/style.scss */
 .ux-activity button {
   font-family: 'Montserrat';
   text-transform: uppercase;
@@ -169,11 +174,11 @@ body .p-2 input.form-control:hover, body .p-2 input.form-control:focus, body .p-
   background-color: transparent;
   cursor: pointer;
 }
-/* line 177, ../sass/style.scss */
+/* line 182, ../sass/style.scss */
 .ux-activity .detail {
   display: none;
 }
-/* line 181, ../sass/style.scss */
+/* line 186, ../sass/style.scss */
 .ux-activity h3 {
   letter-spacing: 0.02em;
   font-family: 'Roboto';
@@ -183,7 +188,7 @@ body .p-2 input.form-control:hover, body .p-2 input.form-control:focus, body .p-
   position: relative;
   z-index: 3;
 }
-/* line 191, ../sass/style.scss */
+/* line 196, ../sass/style.scss */
 .ux-activity .add-btn {
   outline: none;
   border: none;
@@ -203,16 +208,16 @@ body .p-2 input.form-control:hover, body .p-2 input.form-control:focus, body .p-
   border-radius: 40px;
   z-index: 3;
 }
-/* line 210, ../sass/style.scss */
+/* line 215, ../sass/style.scss */
 .ux-activity .add-btn .plus {
   width: 100%;
 }
-/* line 214, ../sass/style.scss */
+/* line 219, ../sass/style.scss */
 .ux-activity .add-btn .check {
   width: 100%;
   display: none;
 }
-/* line 219, ../sass/style.scss */
+/* line 224, ../sass/style.scss */
 .ux-activity .add-btn div {
   width: 32px;
   height: 32px;
@@ -221,20 +226,20 @@ body .p-2 input.form-control:hover, body .p-2 input.form-control:focus, body .p-
   text-align: center;
   line-height: 31px;
 }
-/* line 229, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
 .ux-activity .text {
   position: absolute;
   margin-left: 130px;
   margin-right: 16px;
 }
-/* line 235, ../sass/style.scss */
+/* line 240, ../sass/style.scss */
 .ux-activity .type {
   font-weight: 600;
   font-size: 12px;
   position: relative;
   z-index: 3;
 }
-/* line 242, ../sass/style.scss */
+/* line 247, ../sass/style.scss */
 .ux-activity.liquid {
   border-radius: 20px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
@@ -243,12 +248,12 @@ body .p-2 input.form-control:hover, body .p-2 input.form-control:focus, body .p-
   transition: all 0.15s ease-in;
   padding-left: 4px;
 }
-/* line 250, ../sass/style.scss */
+/* line 255, ../sass/style.scss */
 .ux-activity.liquid:hover {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
   transform: scale(1.02);
 }
-/* line 255, ../sass/style.scss */
+/* line 260, ../sass/style.scss */
 .ux-activity.liquid::after {
   content: ' ';
   border-radius: 20px;
@@ -260,161 +265,161 @@ body .p-2 input.form-control:hover, body .p-2 input.form-control:focus, body .p-
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
   z-index: 2;
 }
-/* line 268, ../sass/style.scss */
+/* line 273, ../sass/style.scss */
 .ux-activity.liquid.req {
   background-image: url("../img/requirement.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 276, ../sass/style.scss */
+/* line 281, ../sass/style.scss */
 .ux-activity.liquid.interview {
   background-image: url("../img/interviews.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 283, ../sass/style.scss */
+/* line 288, ../sass/style.scss */
 .ux-activity.liquid.focus {
   background-image: url("../img/focus-grp.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 290, ../sass/style.scss */
+/* line 295, ../sass/style.scss */
 .ux-activity.liquid.record {
   background-image: url("../img/record.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 297, ../sass/style.scss */
+/* line 302, ../sass/style.scss */
 .ux-activity.liquid.survey {
   background-image: url("../img/survey.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 305, ../sass/style.scss */
+/* line 310, ../sass/style.scss */
 .ux-activity.liquid.paper {
   background-image: url("../img/paper.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 313, ../sass/style.scss */
+/* line 318, ../sass/style.scss */
 .ux-activity.liquid.sketch {
   background-image: url("../img/sketch.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 321, ../sass/style.scss */
+/* line 326, ../sass/style.scss */
 .ux-activity.liquid.storyboard {
   background-image: url("../img/storyboard.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 329, ../sass/style.scss */
+/* line 334, ../sass/style.scss */
 .ux-activity.liquid.audit {
   background-image: url("../img/audit.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 336, ../sass/style.scss */
+/* line 341, ../sass/style.scss */
 .ux-activity.liquid.low-fi {
   background-image: url("../img/low-fi.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 343, ../sass/style.scss */
+/* line 348, ../sass/style.scss */
 .ux-activity.liquid.hi-fi {
   background-image: url("../img/mock.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 350, ../sass/style.scss */
+/* line 355, ../sass/style.scss */
 .ux-activity.liquid.abtest {
   background-image: url("../img/ab-test.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 357, ../sass/style.scss */
+/* line 362, ../sass/style.scss */
 .ux-activity.liquid.analytics {
   background-image: url("../img/analytics.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 364, ../sass/style.scss */
+/* line 369, ../sass/style.scss */
 .ux-activity.liquid.heuristic {
   background-image: url("../img/heuristic.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 371, ../sass/style.scss */
+/* line 376, ../sass/style.scss */
 .ux-activity.liquid.anthropology {
   background-image: url("../img/anthropology.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 378, ../sass/style.scss */
+/* line 383, ../sass/style.scss */
 .ux-activity.liquid.design-system {
   background-image: url("../img/design-system.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 385, ../sass/style.scss */
+/* line 390, ../sass/style.scss */
 .ux-activity.liquid.interaction {
   background-image: url("../img/interaction.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 392, ../sass/style.scss */
+/* line 397, ../sass/style.scss */
 .ux-activity.liquid.interactive {
   background-image: url("../img/prototype.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 399, ../sass/style.scss */
+/* line 404, ../sass/style.scss */
 .ux-activity.liquid.graphic {
   background-image: url("../img/graphic.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 406, ../sass/style.scss */
+/* line 411, ../sass/style.scss */
 .ux-activity.liquid.info-arch {
   background-image: url("../img/info-arch.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 413, ../sass/style.scss */
+/* line 418, ../sass/style.scss */
 .ux-activity.liquid.eye-track {
   background-image: url("../img/eye-track.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 420, ../sass/style.scss */
+/* line 425, ../sass/style.scss */
 .ux-activity.liquid.card-sort {
   background-image: url("../img/card-sort.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 427, ../sass/style.scss */
+/* line 432, ../sass/style.scss */
 .ux-activity.liquid h3 {
   letter-spacing: 0.02em;
   font-family: 'Roboto';
@@ -424,7 +429,7 @@ body .p-2 input.form-control:hover, body .p-2 input.form-control:focus, body .p-
   position: relative;
   z-index: 3;
 }
-/* line 437, ../sass/style.scss */
+/* line 442, ../sass/style.scss */
 .ux-activity.liquid .add-btn {
   outline: none;
   border: none;
@@ -444,16 +449,16 @@ body .p-2 input.form-control:hover, body .p-2 input.form-control:focus, body .p-
   border-radius: 40px;
   z-index: 3;
 }
-/* line 456, ../sass/style.scss */
+/* line 461, ../sass/style.scss */
 .ux-activity.liquid .add-btn .plus {
   width: 100%;
 }
-/* line 460, ../sass/style.scss */
+/* line 465, ../sass/style.scss */
 .ux-activity.liquid .add-btn .check {
   width: 100%;
   display: none;
 }
-/* line 465, ../sass/style.scss */
+/* line 470, ../sass/style.scss */
 .ux-activity.liquid .add-btn div {
   width: 32px;
   height: 32px;
@@ -462,14 +467,14 @@ body .p-2 input.form-control:hover, body .p-2 input.form-control:focus, body .p-
   text-align: center;
   line-height: 31px;
 }
-/* line 475, ../sass/style.scss */
+/* line 480, ../sass/style.scss */
 .ux-activity.liquid .type {
   font-weight: 600;
   font-size: 12px;
   position: relative;
   z-index: 3;
 }
-/* line 482, ../sass/style.scss */
+/* line 487, ../sass/style.scss */
 .ux-activity.liquid button.liquid {
   font-family: 'Roboto';
   letter-spacing: 0.05em;
@@ -491,18 +496,18 @@ body .p-2 input.form-control:hover, body .p-2 input.form-control:focus, body .p-
   z-index: 3;
 }
 
-/* line 506, ../sass/style.scss */
+/* line 511, ../sass/style.scss */
 .ux-plan {
   display: none;
 }
 
-/* line 510, ../sass/style.scss */
+/* line 515, ../sass/style.scss */
 footer {
   font-size: 10px;
   color: #54617A;
   margin: 20px 0;
 }
-/* line 515, ../sass/style.scss */
+/* line 520, ../sass/style.scss */
 footer a, footer a:hover, footer a:focus, footer a:visited {
   color: #54617A;
   text-decoration: none;
